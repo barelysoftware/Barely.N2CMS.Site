@@ -1,0 +1,129 @@
+@import "barelyvariables.less";
+
+body {
+	font-family: @barely-main-font;
+	padding-top: @barely-body-padding;
+}
+
+.page h1,.page h2,.page h3,.page h4,.page h5,.page h6 {
+	font-family: @barely-special-font;
+}
+
+.page,article {
+	padding-top: 1%;
+	padding-bottom:1%;
+	font-size:	@barely-font-size;
+	background-color: @barely-page-color;
+	justify-content:center;
+	align-items:center;
+	color:@barely-pagetext-color;
+	}
+
+.image > img {width:100%;}
+
+.jumbotron  {
+	background-color: barely-pagetext-color;
+}
+
+.addOn {
+	background-color:transparent;
+	color: @barely-addon-color;
+	min-height:@barely-min-height;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:	@barely-font-size;
+	font-style: italic;
+	font-family: @barely-special-font;
+
+}
+ .addOn > div {
+	border:solid 3px @barely-addon-color;
+	min-height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:15px;
+	}
+
+
+.page {
+	display:flex;
+}
+
+ .page > .btn {
+	display:block;
+}
+
+.page .addOn {width:100%;}
+
+.section {width:100%;}
+
+.b-icon {
+}
+
+.b-icon > i:first-child {color:#fff;}
+
+.menu {
+	ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+
+	
+}
+.tagList>li,.tags>li {
+		display:inline;
+		margin:0 4px 0 0;
+	}
+
+
+.page,article,.jumbotron {
+	clear:both;
+	padding:1%;
+
+	section {
+		clear:both;
+		display:block;
+		position:relative;
+	}
+
+	header {
+		font-family:@barely-special-font;
+		width:100%;
+		display:block;
+		clear:both;
+		position:relative;
+
+		>p {
+			font-size: 60%;
+			float:left;
+			margin-right: 8px;
+		}
+
+		.tags {
+			position:absolute;
+			top: 4px;
+			right:8px;
+			font-size:60%;
+
+			>li:after {
+				content:', ';
+			}
+
+			>li:last-child:after {
+				content: '';
+			}
+		}
+
+		> h2 {
+			font-size:125%;
+			margin-bottom:2px;
+		}
+
+	}
+	.content {
+		font-size:75%;
+	}
+}

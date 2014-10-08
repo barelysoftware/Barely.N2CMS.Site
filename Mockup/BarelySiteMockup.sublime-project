@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"less2css" :
+		{
+			"minify":true,
+			"autoCompile":false,
+			"outputDir": "shadow"
+		}
+	}
+}
